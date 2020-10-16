@@ -1,0 +1,8 @@
+<div class="container">
+  <div [formGroup]="form">
+    <app-cva-dropdown formControlName="select" [itemList]="itemList"></app-cva-dropdown>
+    <div class="container__button">
+      <button [disabled]="disabledButton" (click)="submit()">Submit</button>
+    </div>
+  </div>
+</div>

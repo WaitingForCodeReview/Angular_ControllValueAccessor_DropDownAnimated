@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="dropdown">
+    <input [formControl]="selectControl" readonly (click)="toggleDropDown()"/>
+    <ul [class.active]="showDrop">
+      <li *ngFor="let item of itemList" (click)="itemClicked($event)"><a>{{ item }}</a></li>
+    </ul>
+  </div>
+</div>
